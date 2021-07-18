@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Login Page</title>
+  </head>
+  <link type = "text/css" rel="stylesheet" href="static/stylesheets/web.css"/>
+  
+
+  <body>
+
+      <div class="container">
+        <form action="#" method="post"> 
+          <input id = "name" type="text" placeholder = "Username" name='username'><br><br>
+          <input id = "email" placeholder = "Email" name='email' ><br><br>
+          <button type="submit" name="Login" action = "/main" > Login </button> 
+        </form>  
+      </div>
+      <script>
+        function Reset()
+          {
+            document.getElementById('name').value = ''
+            document.getElementById('email').value = ''
+          }
+          Reset();
+          window.onunload = function(){};
+      </script>
+  </body>
+</html>

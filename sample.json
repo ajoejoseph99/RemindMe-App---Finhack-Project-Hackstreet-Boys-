@@ -1,0 +1,10 @@
+{"users": 
+    [{"username": "ajoe", "subscriptions": 
+        [{"sub_name": "netflix", "sub_type": "M", "start_date": "2021-07-17", "end_date": "2021-08-17"},
+             {"sub_name": "amazon", "sub_type": "A", "start_date": "2021-07-17", "end_date": "2022-08-17"}, 
+             {"sub_name": "jio", "sub_type": "A", "start_date": "2021-07-17", "end_date": "2021-08-17"}
+             ]},
+             
+             {"username": "abijith", "subscriptions":
+                 [{"sub_name": "bill", "sub_type": "M", "start_date": "2021-07-17", "end_date": "2021-08-17"}
+            ]}]}

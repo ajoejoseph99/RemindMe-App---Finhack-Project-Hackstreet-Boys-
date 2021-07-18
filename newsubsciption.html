@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Document</title>
+    </head>
+
+  <link type = "text/css" rel="stylesheet" href="style.css"/>
+   
+    <body>
+       
+       <h2> New Subscription </h2>
+      
+    <div class = "container">
+       <form action="#" method="post"> 
+          <input id = "name" type="text" placeholder = "Subscription Name" name='subname'><br><br>
+           <div class="dropdown">
+              <button class="dropbtn">Type</button>
+              <div class="dropdown-content">
+                <a onclick="onClick('Monthly')">Monthly</a>
+                <a onclick="onClick('Annual')">Annual</a>
+              </div>
+            </div> 
+            <br><br>
+            
+          <button type="submit" name="Login" action = "/main" > Add </button> 
+        </form>  
+      
+        
+    </body>
+    <script>
+        function onClick(val) {
+          alert("The Subscription Chosen is : " + val);
+        }
+        </script>
+        
+
+</html>

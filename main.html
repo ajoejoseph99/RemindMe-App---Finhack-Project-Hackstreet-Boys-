@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>name</title>
+    </head>
+    <link type = "text/css" rel="stylesheet" href="static/stylesheets/home.css"/>
+
+    <body>
+      <div class="container" id="sidepanel" >
+        <button id = "sub" class="tablinks" name="subscriptions" onclick="SwitchTab(event, 'subs')"> Subscriptions</button>   
+        <button class="tablinks" name="offers" onclick="SwitchTab(event, 'offer')" > Offers</button>
+        <button class="tablinks" name="discount" onclick="SwitchTab(event, 'disc')">Discount</button>
+      </div>
+      
+      <div class ="main">
+        <div id = "greet">
+          Welcome, {{username}}! 
+        </div>
+        
+        <div id = "subs" class="content">
+          Your subscriptions go here
+          <button name="newsub" > New Subscription</button>
+          
+        </div>
+        <div id = "offer" class = "content">
+          Offers go here
+        </div>
+        <div id = "disc" class = "content">
+         Discounts go here
+        </div>
+      </div>
+
+    <script >
+      document.getElementById("sub").click();
+
+      function SwitchTab(evt, Tab)
+      {
+        var i, tabcontent, tablinks;
+  
+        tabcontent = document.getElementsByClassName("content");
+
+        for (i = 0; i < tabcontent.length; i++)
+          tabcontent[i].style.display = "none";
+        
+        tablinks = document.getElementsByClassName("tablinks");
+
+        for (i = 0; i < tablinks.length; i++) 
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        
+        document.getElementById(Tab).style.display = "block";
+        evt.currentTarget.className += " active";
+      } 
+
+  
+    </script>
+    </body>
+</html>
